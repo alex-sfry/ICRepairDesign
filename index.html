@@ -7,57 +7,201 @@
 	<title>IC "Repair Design Project"</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
+<!-- i tried to use specific classes for positioneing with margins and generally tried to avoid margins in favor of paddings -->
 <body>
 	<header class="header">
-		<div class="container">
+		<div class="container flex-container-center">
+			<!-- i don't think making logo an anchor is of any use for single page landing -->
 			<div class="logo">
 				IC "Repair Design Project"
 			</div>
 			<nav class="nav">
 				<ul class="menu">
-					<li class="menu__item"><a href="#" class="menu__link">HOME</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">PROJECTS</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">MEASUREMENT</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">TEAM</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">REVIEWS</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">CONTACTS</a></li>
+					<li class="menu-item"><a href="#" class="menu-link">HOME</a></li>
+					<li class="menu-item"><a href="#" class="menu-link">PROJECTS</a></li>
+					<li class="menu-item"><a href="#" class="menu-link">MEASUREMENT</a></li>
+					<li class="menu-item"><a href="#" class="menu-link">TEAM</a></li>
+					<li class="menu-item"><a href="#" class="menu-link">REVIEWS</a></li>
+					<li class="menu-item"><a href="#" class="menu-link">CONTACTS</a></li>
 				</ul>
 			</nav>
 			<div class="phone">
-				<a href="tel:+79287683239" class="phone__number">+7 (928) 768-32-39</a>
+				<a href="tel:+79287683239" class="phone-number">+7 (928) 768-32-39</a>
 			</div>
-			<button class="button button-header" type="button">
+			<button class="button button-header-footer" type="button">
 				Request a call
 			</button>
 		</div>
 	</header>
-    <main>
+	<main>
 		<section class="hero">
 			<div class="container">
 				<div class="hero-content">
-					<h1> 
-						Turnkey Repair in the<br> 
-						city of <span class="hero-content__beige">Rostov-on-Don</span>
+					<h1 class="hero-content-title">
+						Turnkey Repair in the<br>
+						city of <span class="hero-content-beige">Rostov-on-Don</span>
 					</h1>
-					<p class="hero-content__text">
+					<p class="hero-content-text">
 						Get ready-made turnkey repairs on time<br>
 						with work time saving up to 45 days and 20% from<br>
 						cost of materials due to the organization of work
 					</p>
-					<div class="hero__buttons">
+					<!-- not sure why 1 button is transparent. maybe it's for hover, but i left them w/o hover effect -->
+					<div class="hero-buttons">
 						<button class="button button-calc" type="button">
 							CALCULATE THE COST
 						</button>
-						<button class="button button-transparent" type="submit">
+						<button class="button button-transparent" type="button">
 							SUBMIT YOUR APPLICATION
 						</button>
 					</div>
 				</div>
 			</div>
 		</section>
+		<section class="completed">
+			<div class="completed-container">
+	<!-- i considered 3 top slider/gallery buttons as a buttons (not anchors) because i think they are intended for JS -->
+				<div class="slider-buttons">
+					<button class="button gallery-button">
+						Rostov-on-Don, Admiral
+					</button>
+					<button class="button gallery-button gallery-button-position">
+						Sochi Thieves
+					</button>
+					<button class="button gallery-button gallery-button-position">
+						Rostov-on-Don Patriotic
+					</button>
+				</div>
+				<div class="completed-wrapper">
+					<div class="completed-left">
+						<h2 class="title">
+							Completed<br>
+							projects
+						</h2>
+						<p class="completed-text">
+							Only a small part of the work performed by our company is presented<br>
+							on the site. For 14 years on in the construction<br>
+							market we have made happy more than 1000 families
+						</p>
+						<div class="completed-info">
+							<dl>
+								<dt class="list-title">
+									City:
+								</dt>
+								<dd class="list-details">
+									Rostov-on-Don<br>
+									LCD admiral
+								</dd>
+								<dt class="list-title list-left-position">
+									Repair time:
+								</dt>
+								<dd class="list-details">
+									3.5 months
+								</dd>
+							</dl>
+							<dl>
+								<dt class="list-title">
+									apartment area:
+								</dt>
+								<dd class="list-details">
+									81 m2
+								</dd>
+								<dt class="list-title list-right-position">
+									Repair Cost:
+								</dt>
+								<dd class="list-details">
+									Upon request
+								</dd>
+							</dl>
+						</div>
+						<!-- slider navigation for JS -->
+						<div class="slider-control">
+							<button class="nav-button">
+								<img src="images/arrow-left.svg" alt="slider left">
+							</button>
+							<button class="nav-button">
+								<img src="images/dot.svg" alt="slider image">
+							</button>
+							<button class="nav-button">
+								<img src="images/dot.svg" alt="slider image">
+							</button>
+							<button class="nav-button">
+								<img src="images/dot.svg" alt="slider image">
+							</button>
+							<button class="nav-button">
+								<img src="images/arrow-right.svg" alt="slider right">
+							</button>
+						</div>
+					</div>
+					<div class="completed-right">
+						<div class="slider-image">
+							<img src="images/slider.jpg" alt="completed project image" class="slider-img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="control control-position">
+			<div class="control-container">
+				<h3 class="control-title">
+					online control
+				</h3>
+				<div class="control-image control-image-position">
+					<div class="control-icon-line"></div>
+					<img src="images/control-icon.svg" alt="online control icon" class="control-icon">
+					<div class="control-icon-line"></div>
+				</div>
+				<div class="control-video-container ">
+					<video class="control-video" muted poster="images/control-video.jpg">
+						<source src="#">
+					</video>
+					<button class="control-video-play">
+						<img src="images/play.svg" alt="play icon" class="control-video-play-icon">
+					</button>
+				</div>
+				<div class="control-line control-line-position">
+
+				</div>
+				<p class="control-text">
+					At each facility, a camera is installed that broadcasts the progress of work on the clock. At any
+					time, you can go to our website and monitor the progress of work in your apartment. You can watch
+					the live broadcast from one of our facilities!
+					<br>Leave a request below and you will receive a link to the broadcast.
+				</p>
+				<form class="broadcast-request">
+				<!-- bcast-form-y - flex container column -->
+					<div class="bcast-form-y">
+				<!-- bcast-form-x - flex container row -->
+						<div class="bcast-form-x">
+							<div class="bcast-input">
+								<label for="name" class="bcast-form-lbl">Name</label><br>
+								<input type="text" class="broadcast-input-text" id="name"
+									placeholder="What is your name:">
+							</div>
+							<div class="bcast-input">
+								<label for="phone" class="bcast-form-lbl">Phone</label><br>
+								<input type="tel" class="broadcast-input-text" id="phone"
+									placeholder="Your phone number:"> 
+							</div>
+							<button class="button bcast-form-button">Submit</button>
+						</div>
+						<div class="first-checkbox">
+							<label class="checkbox-label">
+								<input type="checkbox" class="broadcast-input-checkbox">
+								<span class="fake"></span>
+								<span class="checkbox-text">I agree to the processing of personal data.</span>
+							</label>
+						</div>
+					</div>
+				</form>
+
+			</div>
+		</section>
+
 	</main>
 	<footer class="footer">
 
 	</footer>
 </body>
+
 </html>
