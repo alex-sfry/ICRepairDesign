@@ -451,6 +451,15 @@ li {
 	width: 769px;
 	justify-content: space-between;	
 }
+.broadcast-input-text {
+	color: #363636;
+}
+
+.broadcast-input-text:-webkit-autofill {
+    box-shadow: none;								/* for compatibility */
+    -webkit-box-shadow: 0 0 0 50px #FFFFFF inset; /* input field background color is set to form background color */
+    -webkit-text-fill-color: #363636;			   /* input field text color is set to placeholder color (#363636) */
+}
 
 .broadcast-input-text::placeholder {
 	color: #363636;
@@ -665,6 +674,17 @@ li {
 
 .request-consulation-input-text {
 	padding-bottom: 9px;
+	color: #FFFFFF;
+}
+
+.request-consulation-input-text:-webkit-autofill {
+	box-shadow: none;								/* for compatibility */
+    -webkit-box-shadow: 0 0 0 50px #131313 inset; /* input field background color is set to form background color */
+    -webkit-text-fill-color: #FFFFFF;			   /* input field text color is set to white (placeholder color) */
+}
+
+.e-mail:invalid {
+color: red;										/* doesn't work with autofill (as expected) */
 }
 
 .request-consulation-input {
@@ -677,7 +697,6 @@ li {
 .request-consulation-input:first-child {
 	padding-top: 0;
 }
-
 
 .request-consulation-label {
 	color: rgba(255, 255, 255, 0.5);
