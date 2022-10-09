@@ -134,7 +134,7 @@ li {
 	text-decoration: underline;
 }
 
-.button-header-footer {		
+.button-callback {		
 	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
 	background-color: #E3B873;
 	font-style: italic;
@@ -444,6 +444,7 @@ li {
 }
 .broadcast-input-text {
 	color: #363636;
+	width: 231px;
 }
 
 .broadcast-input-text:-webkit-autofill {
@@ -464,7 +465,7 @@ li {
 	color: rgba(54, 54, 54, 0.5);
 }
 
-.broadcast-form-button {
+.submit-button {
 	background-color: #E3B873;
 	text-align: center;
 	min-width: 200px;
@@ -653,7 +654,7 @@ li {
 	padding: 28px 104px 39px 104px;
 }
 
-.request-consultation-input-text::placeholder {
+.black-input-text::placeholder {
 	color: #FFFFFF;
 	font-family: 'Nunito Sans';
 	font-weight: 400;
@@ -662,12 +663,12 @@ li {
 	background-color: inherit;
 }
 
-.request-consultation-input-text {
+.black-input-text {
 	padding-bottom: 9px;
 	color: #FFFFFF;
 }
 
-.request-consultation-input-text:-webkit-autofill {
+.black-input-text:-webkit-autofill {
 	box-shadow: none;								/* for compatibility */
     -webkit-box-shadow: 0 0 0 50px #131313 inset; /* input field background color is set to form background color */
     -webkit-text-fill-color: #FFFFFF;			   /* input field text color is set to white (placeholder color) */
@@ -688,7 +689,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 	padding-top: 0;
 }
 
-.request-consultation-label {
+.gray-label {
 	color: rgba(255, 255, 255, 0.5);
 }
 
@@ -904,7 +905,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 	align-items: center;
 	justify-content: flex-start;
 	gap: 23px;
-	padding-top: 24px;
+	padding: 24px 0px 0px 32px;
 }
 
 .feedback-client-img {
@@ -920,7 +921,8 @@ color: red;										/* doesn't work with autofill (as expected) */
 	line-height: 180%;
 	color: #959595;
 	padding: 22px 32px 0px 32px;
-	height: 239px;
+	max-height: 278px;
+	overflow: hidden;
 }
 
 .feedback-work-info {
@@ -952,12 +954,109 @@ color: red;										/* doesn't work with autofill (as expected) */
 	padding-left: 15px;
 }
 
+.contacts {
+	background-image: url("../images/contacts_background.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
 
+.contacts::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	background-color: #000000;
+	opacity:0.8;
+	width: 100%;
+	height: 100%
+}
 
+.contacts-container {
+	width: 925px;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
+.address {
+	color: #E3B873;
+	padding: 52px 0px 26px 0px;
+}
 
+.contacts-form {
+	display: flex;
+	flex-direction: column;
+	background-color: #181818;
+	align-items: center;
+	width: 883px;
+	height: 445.32px;
+	padding: 34p 181px 0px 181px;
+	position: relative;
+	z-index: 100;
+}
 
+.contacts-form-position {
+	margin-top: -203px;
+}
 
+.form {
+	padding-top: 45px;
+}
+
+.form-top {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 48px;
+	gap: 58px;
+}
+
+.form-bottom {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.form-top-dimensions {
+	width: 231px;
+}
+
+.form-middle-dimensions {
+	width: 517px;
+}
+
+.subtitle-contacts-form {
+	color: #FFFFFF;
+	padding-top: 34px;
+}
+
+.contacts-input {
+	background: 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.15);	
+}
+
+.third-checkbox {
+	padding: 47px 0px 28px 0px;
+}
+
+.contacts-links {
+	padding-bottom: 43px;
+}
+
+.contacts-map {
+	padding-bottom: 66px;
+}
+
+.footer {
+	background-color: #181818;
+	height: 133px;
+	color: #FFFFFF;
+	font-size: 11px;
+	line-height: 15px;
+}
 
 
 
