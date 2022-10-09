@@ -1059,6 +1059,69 @@ color: red;										/* doesn't work with autofill (as expected) */
 }
 
 
+/*===mobile styles===*/
+
+@media all and (max-width: 1300px) {
+	.header{
+		background-color: #181818;
+		height: 57px;
+	}
+
+	.container {
+		max-width: 375px;
+		margin: 0 auto;
+	}
+
+	.nav {
+		display: none;
+	}
+
+	.button-callback {
+		display: none;
+	}
+
+	.phone-number {
+		color: #FFFFFF;
+	}
+
+	.hero-content {
+		max-width: 375px;
+		display: flex;
+		flex-direction: column;
+		align-self: baseline;
+
+		padding-left: 18px;
+		padding-top: 85px;
+		padding-bottom: 61px;
+	}
+
+	.hero-content-title {
+		font-size: 23px;
+		line-height: 132.83%
+	}
+
+	.hero-content-text {
+		padding: 16px 0px 32px 0px;
+		font-size: 14px;
+		line-height: 135.84%
+	}	
+
+	.hero-buttons {
+		flex-direction: column;
+		gap: 26px;
+	}
+
+	.hero {
+		height: 476px;
+	}
+
+	.mobile-hide {
+		display: none;
+	}
+
+
+  }
+
 
 
 /*===media query===
