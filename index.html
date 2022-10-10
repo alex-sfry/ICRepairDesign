@@ -83,8 +83,16 @@
 							market we have made happy more than 1000 families
 						</p>
 						<div class="slider-mobile">
-							<img src="images/slider.png" alt="completed project image" class="slider-img">
-
+							<img src="images/slider-mobile.png" alt="completed project" class="slider-img">
+							<div class="slider-nav-mobile">
+								<div class="arrow-mobile">
+									<img src="images/arrow.svg" alt="left" class="arrow-left">
+								</div>
+								<div class="arrow-mobile">
+									<img src="images/arrow.svg" alt="right" class="arrow-right">
+								</div>
+							</div>
+								
 						</div>
 						<div class="completed-info">
 							<dl>
@@ -138,7 +146,7 @@
 					</div>
 					<div class="completed-right">
 						<div class="slider-image">
-							<img src="images/slider.png" alt="completed project image" class="slider-img">
+							<img src="images/slider.png" alt="completed project" class="slider-img">
 						</div>
 					</div>
 				</div>
@@ -154,8 +162,11 @@
 					<img src="images/control-icon.svg" alt="online control icon" class="section-icon-image">
 					<div class="section-icon-line"></div>
 				</div>
-				<div class="control-video-container ">
+				<div class="control-video-container">
 					<video class="control-video" muted poster="images/control-video.jpg">
+						<source src="#">
+					</video>
+					<video class="control-video-mobile" muted poster="images/control-video-mobile.jpg">
 						<source src="#">
 					</video>
 					<button class="control-video-play" type="button">
@@ -170,21 +181,30 @@
 					<br>Leave a request below and you will receive a link to the broadcast.
 				</p>
 				<form class="broadcast-request">
-					<!-- broadcast-form-y - flex container column -->
+					<!-- broadcast-form-y - flex container column (for desktop version) -->
 					<div class="broadcast-form-y">
-						<!-- broadcast-form-x - flex container row -->
+						<!-- broadcast-form-x - flex container row (for desktop version)-->
 						<div class="broadcast-form-x">
 							<div class="broadcast-input">
 								<label for="bc-name" class="label broadcast-input-label">Name</label><br>
 								<input type="text" class="input broadcast-input-text" id="bc-name"
 									placeholder="What is your name:">
+								<div class="underline-mobile"></div>
 							</div>
 							<div class="broadcast-input">
 								<label for="bc-phone" class="label broadcast-input-label">Phone</label><br>
 								<input type="tel" class="input broadcast-input-text" id="bc-phone"
 									placeholder="Your phone number:">
+								<div class="underline-mobile"></div>
 							</div>
-							<button class="button submit-button" type="submit">Submit</button>
+							<div class="first-checkbox-mobile">
+								<label class="checkbox-label">
+									<input type="checkbox" class="checkbox">
+									<span class="fake"></span>
+									<span class="checkbox-text">I agree to the processing of personal data.</span>
+								</label>
+							</div>
+							<button class="button submit-button" type="submit">Submit</button>							
 						</div>
 						<div class="first-checkbox">
 							<label class="checkbox-label">
