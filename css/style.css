@@ -33,6 +33,10 @@ li {
 	list-style: none;
 }
 
+.slider-mobile {
+	display: none;
+}
+
 .button {
 	text-transform: uppercase;
 	border: 0;
@@ -229,7 +233,10 @@ li {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	
+}
+
+.completed-left {
+	padding-right: 50px;
 }
 
 .title {
@@ -327,10 +334,11 @@ li {
 	line-height: 19px;
 	color: rgba(255, 255, 255, 0.3);
 	padding-bottom: 6px;
+	margin-left: 60px;
 }
 
-.slider-button-position {
-	margin-left: 60px;
+.slider-button:first-child {
+	margin-left: 0;
 }
 
 .slider-button:hover, .slider-button:focus, .slider-button:active {
@@ -577,9 +585,6 @@ li {
 	padding: 17px 0px 17px 0px;
 	width: 228px;
 	height: 54px;
-}
-
-.types-of-repair-price-position {
 	margin: -27px 0px 124px -102px;
 }
 
@@ -708,10 +713,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
 	min-width: 213px;
 	min-height: 51px;
-}
-
-.request-consultation-button-position {
-	margin-left: 195px;	
+	margin-left: 195px;
 }
 
 .discount {
@@ -774,7 +776,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	z-index: 10;
+	z-index: 1;
 	position: relative;
 }
 
@@ -840,7 +842,6 @@ color: red;										/* doesn't work with autofill (as expected) */
 	background-size: contain;
 	background-repeat: no-repeat;
 	position: relative;
-	z-index: -1;
 	background-position: bottom;
 	padding-bottom: 398px;
 }
@@ -931,9 +932,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 	background-color: #E3B873;
 	display: flex;
 	justify-content: center;
-	align-items: center;	
-}
-.feedback-work-info-position {
+	align-items: center;
 	margin-bottom: -27px;
 }
 
@@ -995,7 +994,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 	height: 445.32px;
 	padding: 34p 181px 0px 181px;
 	position: relative;
-	z-index: 100;
+	z-index: 2;
 }
 
 .contacts-form-position {
@@ -1117,6 +1116,94 @@ color: red;										/* doesn't work with autofill (as expected) */
 
 	.mobile-hide {
 		display: none;
+	}
+
+	.completed {
+		background-color: #181818;
+	}
+
+	.completed-container {
+		max-width: 375px;
+	}
+
+	.completed-left {
+		padding-right: 0;
+	}
+
+	.title {
+		text-align: center;
+		font-size: 22px;
+		line-height: 138.6%;
+	}
+
+	.completed-text {
+		font-size: 11px;
+		line-height: 158.48%;
+		text-align: center;
+		padding: 22px 32px 70px 32px;
+	}
+
+	.completed-info {
+		padding-top: 36px;
+		gap: 61px;
+		padding-left: 17px;
+	}
+
+	.list-title {
+		font-size: 14px;
+		line-height: 138.6%;
+	}
+
+	.list-details {
+		font-size: 11px;
+		line-height: 135.84%;
+		padding-top: 12px
+	}
+
+	.list-left-position {
+		padding-top: 36px;
+	}
+	
+	.list-right-position {
+		padding-top: 51px;
+	}
+
+
+	.completed-right {
+		display: none;
+	}
+
+	.slider-buttons {
+		display: none;
+	}
+
+	.slider-control {
+		display: none;
+	}
+
+	.slider-mobile {
+		display: block;
+		text-align: center;
+	}
+
+	.slider-img {
+		width: 340px;
+		height: 242px;
+		object-fit: cover;	
+	}
+
+
+
+
+
+	.control {
+		background-color: #181818;
+	}
+
+	
+
+	.control-position {
+		margin: 0;
 	}
 
 
