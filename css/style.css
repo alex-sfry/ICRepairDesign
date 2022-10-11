@@ -541,7 +541,7 @@ li {
 	width: 18px;
 	height: 18px;
 	background: #E3B873;
-	color: #fff;
+	color: #ffffff;
 	justify-content: center;
 }
 
@@ -549,6 +549,7 @@ li {
 	content:"\2714";
 	opacity: 0;
 	transition: .2s;
+	color: #ffffff;
 }
 
 .checkbox:checked + .fake::before{
