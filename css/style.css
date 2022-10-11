@@ -33,7 +33,10 @@ li {
 	list-style: none;
 }
 
-.slider-mobile, .control-video-mobile, .first-checkbox-mobile, .underline-mobile {
+.slider-mobile,
+.control-video-mobile,
+.first-checkbox-mobile,
+.underline-mobile {
 	display: none;
 }
 
@@ -210,6 +213,10 @@ li {
 	padding: 20px 0px;
 }
 
+.hero-content-text br:nth-child(2) {
+	display: none;
+}
+
 .hero-buttons {
 	display: flex;
 	gap: 20px;
@@ -288,11 +295,33 @@ li {
 }
 
 .nav-button {
-	background: 0;
+	background: 0;	
 }
 
-.nav-button:hover {
+.nav-button:not(:first-child):not(:last-child) {
+	height: 9.6px;
+	width: 9.6px;
+	border-radius: 50%;
+}
+
+
+.nav-button:hover,
+.nav-button:focus {
 	cursor: pointer;
+	background-color: #FFFFFF;
+	height: 9.6px;
+	width: 9.6px;
+	border-radius: 50%;
+}
+
+.nav-button:first-child.nav-button:hover, 
+.nav-button:last-child.nav-button:hover,
+.nav-button:first-child.nav-button:focus, 
+.nav-button:last-child.nav-button:focus {
+	background-color:inherit;
+	height: inherit;
+	width: inherit;
+	border-radius: inherit;
 }
 
 .nav-button:nth-last-child(3) {
@@ -424,7 +453,7 @@ li {
 	margin: 62px 0px 34px 0px;
 }
 
-c {
+.control-text {
 	color: #363636;
 	font-family: inherit;
 	font-weight: inherit;
@@ -530,6 +559,7 @@ c {
 	max-width: 1256px;
 	margin: 0 auto;
 }
+
 .types-of-repair-flex {
 	width: 100%;
 	display: flex;
@@ -557,6 +587,12 @@ c {
 	background-color: #FFFFFF;
 	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
 	width: 330px;
+}
+
+.types-of-repair-img {
+	width: 392px;
+	height: 421px;
+	object-fit: contain;
 }
 
 .types-of-repair-list {
@@ -613,6 +649,7 @@ c {
 .request-form {
 	background-color: #131313;
 	min-height: 509px;
+	box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
 }
 
 .list-style {
@@ -990,6 +1027,10 @@ color: red;										/* doesn't work with autofill (as expected) */
 	padding: 52px 0px 26px 0px;
 }
 
+.address br:nth-child(2) {
+	display: none;
+}
+
 .contacts-form {
 	display: flex;
 	flex-direction: column;
@@ -999,7 +1040,6 @@ color: red;										/* doesn't work with autofill (as expected) */
 	height: 445.32px;
 	padding: 34p 181px 0px 181px;
 	position: relative;
-	z-index: 2;
 }
 
 .contacts-form-position {
@@ -1048,10 +1088,20 @@ color: red;										/* doesn't work with autofill (as expected) */
 
 .contacts-links {
 	padding-bottom: 43px;
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+}
+
+.email, .instagram {
+	display: block;
+	width: 28px;
+	height: 28px;
 }
 
 .contacts-map {
 	padding-bottom: 66px;
+	filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.15));
 }
 
 .footer {
@@ -1077,12 +1127,12 @@ color: red;										/* doesn't work with autofill (as expected) */
 	}
 
 	.header{
-		background-color: #181818;
 		height: 57px;
+		background-color: #181818;
 	}
 
 	.container {
-		max-width: 375px;
+		max-width: 340px;
 		margin: 0 auto;
 	}
 
@@ -1099,11 +1149,11 @@ color: red;										/* doesn't work with autofill (as expected) */
 	}
 
 	.hero-content {
-		max-width: 375px;
+		max-width: 340px;
 		display: flex;
 		flex-direction: column;
 		align-self: baseline;
-		padding: 85px 18px 61px 18px;
+		padding: 85px 0px 61px 0px;
 	}
 
 	.hero-content-title {
@@ -1112,16 +1162,29 @@ color: red;										/* doesn't work with autofill (as expected) */
 	}
 
 	.hero-content-text {
-		padding: 16px 0px 55px 0px;
+		padding: 16px 0px 48px 0px;
 		font-size: 14px;
 		line-height: 135.84%
-	}	
+	}
+
+	.hero-content-text br:nth-child(2) {
+		display: block;
+	}
+
+	.hero-content-text br:last-child {
+		display: none;
+	}
 
 	.hero-buttons {
 		flex-direction: column;
 		gap: 26px;
 	}
 
+	.button-calc, .button-transparent {
+		box-shadow: none;
+		
+	}
+	
 	.hero {
 		height: 476px;
 	}
@@ -1200,8 +1263,8 @@ color: red;										/* doesn't work with autofill (as expected) */
 	}
 
 	.slider-img {
-		width: 340px;
-		height: 242px;
+		max-width: 340px;
+		max-height: 242px;
 		object-fit: cover;
 		position: relative;
 	}
@@ -1232,7 +1295,6 @@ color: red;										/* doesn't work with autofill (as expected) */
 
 	.control {
 		background-color: #181818;
-		height: 826px;
 	}
 
 	.control-container {
@@ -1297,7 +1359,6 @@ color: red;										/* doesn't work with autofill (as expected) */
 
 	.broadcast-form-y {
 		width: 100%;
-		display: block;
 	}
 	
 	.broadcast-form-x {	
@@ -1346,7 +1407,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 	.underline-mobile {
 		display: block;
 		height: 1px;
-		width: 340px;
+		max-width: 340px;
 		background: #FFFFFF;
 		border: 1px solid rgba(54, 54, 54, 0.3);
 		transform: matrix(1, 0, 0, -1, 0, 0);
@@ -1356,18 +1417,234 @@ color: red;										/* doesn't work with autofill (as expected) */
 		color: #FFFFFF;
 	}
 
-	.submit-button {
-		margin-top: 62px;
+	.submit-button {	
 		height: 51px;
+		width: 100%
 	}
 
+	.mobile-position {
+		margin-top: 62px;
+		margin-bottom: -25px;
+	}
 
+	.types-of-repair {
+		padding-top: 83px;
+	}
 
+	.types-of-repair-flex {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		gap: 59px;
+	}
+
+	.types-of-repair-card {
+		align-items: baseline;
+		justify-content: flex-start;		
+	}
+
+	.types-of-repair-title {
+		font-size: 15px;
+		line-height: 138.6%;
+	}
+
+	.types-of-repair-list {
+		padding-top: 10px;
+	}
+
+	.types-of-repair-content {
+		padding:21px 30px 37px 30px;
+		box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+		width: 270px;
+	}
+
+	.types-of-repair-content-position {
+		margin-top: -142px;
+	}
+	
+	.types-of-repair-img {
+		max-width: 340px;
+		max-height: 365px;
+		object-fit: contain;
+	}
+
+	.types-of-repair-content-item {
+		font-size: 13px;
+		line-height: 169.8%;
+	}
+
+	.types-of-repair-price {
+		font-size: 15px;
+		line-height: 138.6%;
+		padding: 11px 0px 11px 0px;		
+		width: 190px;
+		height: 40px;
+		margin: -20px 0px 0px 0px;
+	}
+
+	.request-consultation {
+		display: none;
+	}
+
+	.feedback {
+		display: none;
+	}
+
+	.gallery-buttons {
+		display: none;
+	}
+
+	.gallery-right {
+		display: none;
+	}
+
+	.gallery {
+		background-image: url("");
+		height: 100%;
+	}
+
+	.gallery-position {
+		margin-top: 0;
+	}
+	
+	.gallery::before {
+		display: none;
+	}
+
+	.gallery-title {
+		letter-spacing: normal;
+		padding-bottom: 24px;
+		padding-top: 75px;
+	}
+
+	.gallery-mobile-img {
+		max-width: 340px;
+		max-height: 242px;
+		object-fit: contain;
+	}
+
+	.contacts {
+		background-image: url("");
+		background-color: #181818;	
+	}
+
+	.contacts::before {
+		display: none;
+	}
+
+	.contacts-mobile {
+		margin-top: -121px;
+	}
+
+	.contacts-form {
+		max-width: 340px;
+		height: 100%;
+		order: 1;
+	}
+	
+	.contacts-form-position {
+		margin-top: 173px;
+	}
+
+	.subtitle-contacts-form {
+		color: #FFFFFF;
+		padding: 0;
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.contacts-container {
+		max-width: 340px;
+		margin: 0 auto;
+	}
+
+	.form {
+		padding-top: 52px;
+	}
+	
+	.form-top {
+		flex-direction: column;
+		justify-content: flex-start;
+		padding: 0;
+		max-width: 340px;
+		gap: 0;
+	}
+	
+	.form-bottom {
+		justify-content: flex-start;		
+	}
+
+	.form-top-dimensions {
+		width: 340px;
+	}
+	
+	.form-middle-dimensions {
+		max-width: 340px;
+	}
+	
+	.black-input-text {
+		padding: 0;
+		color: #FFFFFF;
+	}
+
+	.contacts-input {
+		background: 0;
+		border: 0;
+		padding-top: 63px;
+	}
+
+	.form-top .contacts-input:first-child {
+		padding: 0;
+	}
+
+	.third-checkbox {
+		padding: 21px 0px 67px 0px;
+	}
+
+	.map {
+		max-width: 340px;
+		height: 255px;
+	}
+
+	.contacts-map {
+		order: 2;
+		padding: 46px 0px 0px 0px;
+	}
+
+	.address {
+		order: 3;
+		padding: 42px 0px 23px 0px;
+		font-size: 18px;
+	}
+
+	.address br {
+		display: none;
+	}
+
+	.address br:nth-child(2) {
+		display: block;
+	}
+	
+
+	.contacts-links {
+		order: 4;
+		padding: 0;
+		gap: 21px;
+	}
+
+	.email, .instagram {
+		width: 39px;
+		height: 39px;
+	}
+	
+	.footer {
+		height: 49px;
+	}
+
+	.footer .container {
+		display: none;
+	}
+		
+	
   }
-
-
-
-/*===media query===
-@media screen and (
-}
-*/
