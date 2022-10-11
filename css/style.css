@@ -519,6 +519,10 @@ li {
 	border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 }
 
+.checkbox-text {
+	margin-left: 8px;
+}
+
 .checkbox-label {
 	cursor: pointer;
 	color: #181818;
