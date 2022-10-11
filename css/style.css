@@ -27,6 +27,11 @@ a {
 	text-decoration: none;
 }
 
+a[href^=tel] {
+	text-decoration:inherit;
+	color: inherit;
+}
+
 ul,
 ol,
 li {
