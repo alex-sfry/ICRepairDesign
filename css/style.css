@@ -3,7 +3,7 @@
 *,
 *::before,
 *::after {
-    margin: 0;
+	margin: 0;
 	padding: 0;
 	border: 0;
 	box-sizing: border-box;
@@ -28,7 +28,7 @@ a {
 }
 
 a[href^=tel] {
-	text-decoration:inherit;
+	text-decoration: inherit;
 	color: inherit;
 }
 
@@ -49,7 +49,7 @@ li {
 	text-transform: uppercase;
 	border: 0;
 	background: 0;
-	color:#FFFFFF;
+	color: #FFFFFF;
 	font-weight: inherit;
 	font-family: inherit;
 	font-size: 11px;
@@ -70,7 +70,7 @@ li {
 	font-weight: 400;
 }
 
-.label {	
+.label {
 	font-size: 13px;
 	line-height: 21px;
 	font-family: inherit;
@@ -94,7 +94,7 @@ li {
 	align-items: center;
 }
 
-.header{
+.header {
 	background-color: #131313;
 	height: 83px;
 	color: #FFFFFF;
@@ -146,7 +146,7 @@ li {
 	text-decoration: underline;
 }
 
-.button-callback {		
+.button-callback {
 	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
 	background-color: #E3B873;
 	font-style: italic;
@@ -175,7 +175,7 @@ li {
 .hero {
 	height: 707px;
 	background-image: url("../images/hero.jpg");
-	background-size: cover;	
+	background-size: cover;
 	color: #FFFFFF;
 	position: relative;
 }
@@ -186,7 +186,7 @@ li {
 	top: 0;
 	left: 0;
 	background-color: #000000;
-	opacity:0.7;
+	opacity: 0.7;
 	width: 100%;
 	height: 100%
 }
@@ -236,8 +236,8 @@ li {
 
 .completed-container {
 	max-width: 1171px;
-	margin: 0 auto;	
-	
+	margin: 0 auto;
+
 }
 
 .completed-wrapper {
@@ -347,7 +347,13 @@ li {
 	opacity: 1;
 	width: 679px;
 	height: 482px;
+}
 
+.slider-images-mobile .image.active {
+	opacity: 1;
+	width: 340px;
+	height: 242px;
+	background-size: contain;
 }
 
 .slider-images .image {
@@ -437,7 +443,7 @@ li {
 }
 
 .control-video-play {
-	position:absolute;
+	position: absolute;
 	top: 174px;
 	left: 365px;
 	background-color: #E3B873;
@@ -488,8 +494,9 @@ li {
 .broadcast-form-x {
 	display: flex;
 	width: 769px;
-	justify-content: space-between;	
+	justify-content: space-between;
 }
+
 .broadcast-input-text {
 	color: #363636;
 	width: 231px;
@@ -500,9 +507,12 @@ li {
 }
 
 .broadcast-input-text:-webkit-autofill {
-    box-shadow: none;								/* for compatibility */
-    -webkit-box-shadow: 0 0 0 50px #FFFFFF inset; /* input field background color is set to form background color */
-    -webkit-text-fill-color: #363636;			   /* input field text color is set to placeholder color (#363636) */
+	box-shadow: none;
+	/* for compatibility */
+	-webkit-box-shadow: 0 0 0 50px #FFFFFF inset;
+	/* input field background color is set to form background color */
+	-webkit-text-fill-color: #363636;
+	/* input field text color is set to placeholder color (#363636) */
 }
 
 .broadcast-input-text::placeholder {
@@ -542,11 +552,11 @@ li {
 	font-weight: inherit;
 }
 
-.checkbox{
+.checkbox {
 	display: none;
 }
 
-.fake{
+.fake {
 	display: inline-flex;
 	width: 18px;
 	height: 18px;
@@ -555,13 +565,13 @@ li {
 	justify-content: center;
 }
 
-.fake::before{
-	content:"\2714";
+.fake::before {
+	content: "\2714";
 	opacity: 0;
 	transition: .2s;
 }
 
-.checkbox:checked + .fake::before{
+.checkbox:checked+.fake::before {
 	opacity: 1;
 }
 
@@ -597,7 +607,7 @@ li {
 }
 
 .types-of-repair-content {
-	padding:25px 31px 49px 31px;
+	padding: 25px 31px 49px 31px;
 	background-color: #FFFFFF;
 	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
 	width: 330px;
@@ -730,13 +740,17 @@ li {
 }
 
 .black-input-text:-webkit-autofill {
-	box-shadow: none;								/* for compatibility */
-    -webkit-box-shadow: 0 0 0 50px #131313 inset; /* input field background color is set to form background color */
-    -webkit-text-fill-color: #FFFFFF;			   /* input field text color is set to white (placeholder color) */
+	box-shadow: none;
+	/* for compatibility */
+	-webkit-box-shadow: 0 0 0 50px #131313 inset;
+	/* input field background color is set to form background color */
+	-webkit-text-fill-color: #FFFFFF;
+	/* input field text color is set to white (placeholder color) */
 }
 
 .e-mail:invalid {
-color: red;										/* doesn't work with autofill (as expected) */
+	color: red;
+	/* doesn't work with autofill (as expected) */
 }
 
 .request-consultation-input {
@@ -783,7 +797,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 	height: 72px;
 	border-radius: 50px;
 	background-color: #E3B873;
-	border:0;
+	border: 0;
 }
 
 .discount {
@@ -823,7 +837,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 	top: 0;
 	left: 0;
 	background-color: #000000;
-	opacity:0.75;
+	opacity: 0.75;
 	width: 100%;
 	height: 100%
 }
@@ -886,7 +900,9 @@ color: red;										/* doesn't work with autofill (as expected) */
 	padding-bottom: 6px;
 }
 
-.gallery-button:hover, .gallery-button:focus, .gallery-button:active {
+.gallery-button:hover,
+.gallery-button:focus,
+.gallery-button:active {
 	border-bottom: 1px solid #E3B873;
 	color: #E3B873;
 	padding-bottom: 5px;
@@ -913,7 +929,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 	top: 0;
 	left: 0;
 	background-color: #FFFFFF;
-	opacity:0.95;
+	opacity: 0.95;
 	width: 100%;
 	height: 100%
 }
@@ -995,7 +1011,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 .vertical-line {
 	width: 2px;
 	height: 54px;
-	background-color:#FFFFFF;
+	background-color: #FFFFFF;
 	margin-left: 17px;
 	margin-right: 17px;
 }
@@ -1022,7 +1038,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 	top: 0;
 	left: 0;
 	background-color: #000000;
-	opacity:0.8;
+	opacity: 0.8;
 	width: 100%;
 	height: 100%
 }
@@ -1078,6 +1094,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 	align-items: center;
 	width: 100%;
 }
+
 .form-top-dimensions {
 	width: 231px;
 }
@@ -1093,7 +1110,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 
 .contacts-input {
 	background: 0;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.15);	
+	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .third-checkbox {
@@ -1107,7 +1124,8 @@ color: red;										/* doesn't work with autofill (as expected) */
 	gap: 15px;
 }
 
-.email, .instagram {
+.email,
+.instagram {
 	display: block;
 	width: 28px;
 	height: 28px;
@@ -1140,7 +1158,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 		line-height: 138.6%;
 	}
 
-	.header{
+	.header {
 		height: 57px;
 		background-color: #181818;
 	}
@@ -1194,11 +1212,12 @@ color: red;										/* doesn't work with autofill (as expected) */
 		gap: 26px;
 	}
 
-	.button-calc, .button-transparent {
+	.button-calc,
+	.button-transparent {
 		box-shadow: none;
-		
+
 	}
-	
+
 	.hero {
 		height: 476px;
 	}
@@ -1253,7 +1272,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 	.list-left-position {
 		padding-top: 36px;
 	}
-	
+
 	.list-right-position {
 		padding-top: 51px;
 	}
@@ -1273,13 +1292,6 @@ color: red;										/* doesn't work with autofill (as expected) */
 	.slider-mobile {
 		display: block;
 		text-align: center;
-		position: relative;
-	}
-
-	.slider-img {
-		max-width: 340px;
-		max-height: 242px;
-		object-fit: cover;
 		position: relative;
 	}
 
@@ -1314,7 +1326,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 	.control-container {
 		max-width: 340px;
 	}
-	
+
 	.control-position {
 		margin: 0;
 	}
@@ -1347,13 +1359,13 @@ color: red;										/* doesn't work with autofill (as expected) */
 		height: 37px;
 		text-align: center;
 	}
-	
+
 	.control-video-play-icon {
 		width: 12px;
 		height: 12px;
 		margin-right: 4px;
 		margin-top: 2px;
-		
+
 	}
 
 	.control-line-position {
@@ -1374,8 +1386,8 @@ color: red;										/* doesn't work with autofill (as expected) */
 	.broadcast-form-y {
 		width: 100%;
 	}
-	
-	.broadcast-form-x {	
+
+	.broadcast-form-x {
 		flex-direction: column;
 		width: 100%;
 		justify-content: flex-start;
@@ -1417,7 +1429,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 	.broadcast-input:first-child {
 		padding-top: 0;
 	}
-	
+
 	.underline-mobile {
 		display: block;
 		height: 1px;
@@ -1431,7 +1443,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 		color: #FFFFFF;
 	}
 
-	.submit-button {	
+	.submit-button {
 		height: 51px;
 		width: 100%
 	}
@@ -1455,7 +1467,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 
 	.types-of-repair-card {
 		align-items: baseline;
-		justify-content: flex-start;		
+		justify-content: flex-start;
 	}
 
 	.types-of-repair-title {
@@ -1468,7 +1480,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 	}
 
 	.types-of-repair-content {
-		padding:21px 30px 37px 30px;
+		padding: 21px 30px 37px 30px;
 		box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
 		width: 270px;
 	}
@@ -1476,7 +1488,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 	.types-of-repair-content-position {
 		margin-top: -142px;
 	}
-	
+
 	.types-of-repair-img {
 		max-width: 340px;
 		max-height: 365px;
@@ -1491,7 +1503,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 	.types-of-repair-price {
 		font-size: 15px;
 		line-height: 138.6%;
-		padding: 11px 0px 11px 0px;		
+		padding: 11px 0px 11px 0px;
 		width: 190px;
 		height: 40px;
 		margin: -20px 0px 0px 0px;
@@ -1521,7 +1533,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 	.gallery-position {
 		margin-top: 0;
 	}
-	
+
 	.gallery::before {
 		display: none;
 	}
@@ -1540,7 +1552,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 
 	.contacts {
 		background-image: url("");
-		background-color: #181818;	
+		background-color: #181818;
 	}
 
 	.contacts::before {
@@ -1556,7 +1568,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 		height: 100%;
 		order: 1;
 	}
-	
+
 	.contacts-form-position {
 		margin-top: 173px;
 	}
@@ -1576,7 +1588,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 	.form {
 		padding-top: 52px;
 	}
-	
+
 	.form-top {
 		flex-direction: column;
 		justify-content: flex-start;
@@ -1584,19 +1596,19 @@ color: red;										/* doesn't work with autofill (as expected) */
 		max-width: 340px;
 		gap: 0;
 	}
-	
+
 	.form-bottom {
-		justify-content: flex-start;		
+		justify-content: flex-start;
 	}
 
 	.form-top-dimensions {
 		width: 340px;
 	}
-	
+
 	.form-middle-dimensions {
 		max-width: 340px;
 	}
-	
+
 	.black-input-text {
 		padding: 0;
 		color: #FFFFFF;
@@ -1639,7 +1651,7 @@ color: red;										/* doesn't work with autofill (as expected) */
 	.address br:nth-child(2) {
 		display: block;
 	}
-	
+
 
 	.contacts-links {
 		order: 4;
@@ -1647,11 +1659,12 @@ color: red;										/* doesn't work with autofill (as expected) */
 		gap: 21px;
 	}
 
-	.email, .instagram {
+	.email,
+	.instagram {
 		width: 39px;
 		height: 39px;
 	}
-	
+
 	.footer {
 		height: 49px;
 	}
@@ -1659,6 +1672,6 @@ color: red;										/* doesn't work with autofill (as expected) */
 	.footer .container {
 		display: none;
 	}
-		
-	
-  }
+
+
+}
