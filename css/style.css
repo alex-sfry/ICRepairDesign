@@ -12,7 +12,6 @@
 img {
 	border: 0;
 	vertical-align: top;
-
 }
 
 body {
@@ -155,21 +154,18 @@ li {
 	min-height: 37px;
 }
 
-.button-calc {
-	background-color: #E3B873;
-	font-style: italic;
-	border-radius: 2px;
-	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
-	min-width: 207px;
-	min-height: 51px;
-}
-
-.button-transparent {
+.button-hero {
 	font-style: italic;
 	border: 1px solid #FFFFFF;
 	border-radius: 2px;
 	min-width: 207px;
 	min-height: 51px;
+}
+
+.button-hero:hover {
+	background-color: #E3B873;
+	border: 0;
+	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
 }
 
 .hero {
@@ -1288,7 +1284,6 @@ li {
 	.button-calc,
 	.button-transparent {
 		box-shadow: none;
-
 	}
 
 	.hero {
