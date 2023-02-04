@@ -152,6 +152,7 @@ li {
 	border-radius: 2px;
 	min-width: 161px;
 	min-height: 37px;
+	padding: 10px 33px;
 }
 
 .button-hero {
@@ -160,6 +161,8 @@ li {
 	border-radius: 2px;
 	min-width: 207px;
 	min-height: 51px;
+	padding: 0px 23px;
+	box-shadow: none;
 }
 
 .button-hero:hover {
@@ -528,6 +531,7 @@ li {
 	text-align: center;
 	min-width: 200px;
 	min-height: 51px;
+	padding: 0px 75px;
 }
 
 .broadcast-input {
@@ -780,6 +784,7 @@ li {
 	min-width: 213px;
 	min-height: 51px;
 	margin-left: 195px;
+	padding: 0px 21px;
 }
 
 .discount {
@@ -1281,11 +1286,6 @@ li {
 		gap: 26px;
 	}
 
-	.button-calc,
-	.button-transparent {
-		box-shadow: none;
-	}
-
 	.hero {
 		height: 476px;
 	}
@@ -1740,6 +1740,4 @@ li {
 	.footer .container {
 		display: none;
 	}
-
-
 }
