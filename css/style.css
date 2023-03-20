@@ -104,6 +104,7 @@ li {
 .logo {
 	color: #E3B873;
 	text-transform: uppercase;
+    width: 140px;
 }
 
 .nav {
@@ -1152,7 +1153,7 @@ li {
 	cursor: pointer;
 	position:relative;
 	z-index: 100;
-	margin-right: 20px;
+	sdfsmargin-right: 5px;
 }
 .burger-menu span {
 	background: #fff;
@@ -1200,21 +1201,22 @@ li {
 	.nav{
 		padding:0;
 		position: absolute;
-		right: 0px;
+		right: 0;
 	}
 	.menu{
-		width: 340px;
+		width: 375px;
 		position: absolute;
 		top: -200vh;
-		right: 0;
+		right: -17px;
 		padding-top: 100px;
 		z-index: 100;
 		flex-direction: column;
 		align-items: center;
 		gap: 20px;
 		height: 100vh;
-		background: #636363;
+		background: #181818;
 		transition: top 1s;
+        opacity: 0.9;
 	}
 	.menu-item:nth-child(3),
 	.menu-item:nth-child(4),
