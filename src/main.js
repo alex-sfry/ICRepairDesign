@@ -13,19 +13,19 @@ document.querySelectorAll(".menu-link").forEach (item => {
 })
 // slider
 const images = [{
-	url: './images/slider-image1.jpg'
+	url: './images/slider-image1.webp'
 }, {
-	url: './images/slider-image2.jpg'
+	url: './images/slider-image2.webp'
 }, {
-	url: './images/slider-image3.jpg'
+	url: './images/slider-image3.webp'
 }
 ];
 const imagesMobile = [{
-	url: './images/slider-image1-mobile.jpg'
+	url: './images/slider-image1-mobile.webp'
 }, {
-	url: './images/slider-image2-mobile.jpg'
+	url: './images/slider-image2-mobile.webp'
 }, {
-	url: './images/slider-image3-mobile.jpg'
+	url: './images/slider-image3-mobile.webp'
 }
 ];
 

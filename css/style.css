@@ -174,7 +174,7 @@ li {
 
 .hero {
 	height: 707px;
-	background-image: url("../images/hero.jpg");
+	background-image: url("../images/hero.webp");
 	background-size: cover;
 	color: #FFFFFF;
 	position: relative;
@@ -655,7 +655,7 @@ li {
 }
 
 .request-consultation {
-	background-image: url("../images/section5_background.png");
+	background-image: url("../images/section5_background.webp");
 	background-repeat: no-repeat;
 	padding-top: 106px;
 }
@@ -824,7 +824,7 @@ li {
 }
 
 .gallery {
-	background-image: url("../images/gallery-background.jpg");
+	background-image: url("../images/gallery-background.webp");
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
@@ -914,7 +914,7 @@ li {
 
 .feedback {
 	padding-top: 110px;
-	background-image: url("../images/background.png");
+	background-image: url("../images/background.webp");
 	background-size: contain;
 	background-repeat: no-repeat;
 	position: relative;
@@ -1030,7 +1030,7 @@ li {
 }
 
 .contacts {
-	background-image: url("../images/contacts_background.png");
+	background-image: url("../images/contacts_background.webp");
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
