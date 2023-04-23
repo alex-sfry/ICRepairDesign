@@ -20,6 +20,15 @@ const images = [{
 	url: './images/slider-image3.jpg'
 }
 ];
+const imagesMobile = [{
+	url: './images/slider-image1-mobile.jpg'
+}, {
+	url: './images/slider-image2-mobile.jpg'
+}, {
+	url: './images/slider-image3-mobile.jpg'
+}
+];
+
 
 function initSlider() {
 	if (!images || !images.length) {
@@ -41,12 +50,11 @@ function initSlider() {
 	function initImages() {
 		images.forEach((image, index) => {
 			let imageDiv = `<div class="image n${index} ${index === 0 ? "active" : ""}" style="background-image:url(${images[index].url});" data-index="${index}"></div>`;
+            let imageDivMobile = `<div class="image n${index} ${index === 0 ? "active" : ""}" style="background-image:url(${imagesMobile[index].url});" data-index="${index}"></div>`;
 			sliderImages.innerHTML += imageDiv;
 			sliderImagesMobile.innerHTML += imageDiv
 		});
 	}
-
-	/* below there are a little bit complicated combinations of selectors because i did not want to add/remove classes from "design studio project part of which this slider is */
 
 	function initArrows() {
 		sliderControl.querySelectorAll(".arrow").forEach(arrow => {
