@@ -1,5 +1,5 @@
-
-@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap');
+/* @font-face {
     font-family: 'Nunito Sans';
     src: url('../fonts/NunitoSans-Regular.ttf');
     font-display: swap;
@@ -21,7 +21,7 @@
     font-display: swap;
     font-weight: 400;
     font-style: normal;
-}
+} */
 
 *,
 *::before,
