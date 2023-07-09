@@ -1279,6 +1279,10 @@ body.no-scroll{
 		color: #FFFFFF;
 	}
 
+    .hero {
+        background-image: url("../images/hero-mobile.jpg");
+    }
+
 	.hero-content {
 		max-width: 340px;
 		display: flex;

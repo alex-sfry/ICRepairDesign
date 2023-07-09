@@ -24,7 +24,7 @@ const images = [{
 const imagesMobile = [{
 	url: './images/slider-image1.jpg'
 }, {
-	url: './images/slider-image2.jpg'
+	url: './images/slider-image2-mobile.jpg'
 }, {
 	url: './images/slider-image3.jpg'
 }
